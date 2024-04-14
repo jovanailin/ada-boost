@@ -1,21 +1,35 @@
-# Ada-Boost custom implementation 
+# AdaBoost Implementation from Scratch
 
-This repository contains a custom implementation of the AdaBoost (Adaptive Boosting) algorithm. The purpose of this project is to provide an in-depth understanding of the underlying logic behind the AdaBoost algorithm, without the use of existing Python libraries.
+This repository contains a Python implementation of the AdaBoost algorithm created from scratch. The AdaBoost (Adaptive Boosting) algorithm is a powerful ensemble technique used to improve the performance of machine learning models by combining multiple weak learners to create a strong learner. This project utilizes simple classifiers like Decision Trees and Naive Bayes as weak learners.
 
-## About AdaBoost
+## Project Description
 
-AdaBoost is a powerful ensemble machine learning algorithm, mainly used to improve the results of decision trees on binary classification problems. It works by creating a strong classifier from a number of weak classifiers. This is done by building a model from the training data, then creating a second model that attempts to correct the errors from the first model. Models are added until the training set is predicted perfectly or a maximum number of models are added.
+The AdaBoost algorithm is designed to increase the accuracy of any given machine learning algorithm. It focuses on training models sequentially, each trying to correct its predecessor's mistakes. The final model is a weighted sum of these weak learners, capable of achieving high accuracy on both training and unseen data.
 
-### Repository Structure
+In this project, we implement AdaBoost using Python to understand the core mechanics such as weight updating, error calculation, and learner aggregation, all from scratch.
 
-`adaboost_jovanailin.py`: This is the main Python script containing the implementation of the AdaBoost algorithm.
+## Features
 
-`drugY.csv`: This CSV file contains the dataset used for testing the implementation.
+- **Custom AdaBoost Implementation**: Functions to manage the entire boosting process including training weak learners, updating instance weights, and aggregating predictions.
+- **Versatility in Model Choice**: Flexibility to use either Decision Trees or Naive Bayes classifiers as the base learners.
+- **Performance Evaluation**: Code to assess and visualize the accuracy of individual models as well as the entire ensemble.
+- **Parameter Tuning**: Additional scripts for parameter optimization and model validation.
 
-### Running the Code
-To run the code, you will need to have Python installed on your computer along with the pandas and numpy libraries. Once those are installed, you can run the `adaboost_jovanailin.py` script using any Python IDE or through the command line.
+## Getting Started
 
-Please note that this implementation is educational and not optimized for large datasets or for use in production.
+### Prerequisites
 
-#### Prerequisites
-Python 3.x
+Ensure you have Python installed on your machine. The project also requires the following Python libraries:
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+You can install these packages using pip:
+`pip install pandas numpy matplotlib scikit-learn`
+
+
+### Installation
+
+Clone this repository to your local machine to get started:
+`git clone https://github.com/your-username/AdaBoost-Project.git`
