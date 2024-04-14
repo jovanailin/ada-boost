@@ -1,4 +1,4 @@
-# AdaBoost Implementation from Scratch
+# AdaBoost - Custom Implementation
 
 This repository contains a Python implementation of the AdaBoost algorithm created from scratch. The AdaBoost (Adaptive Boosting) algorithm is a powerful ensemble technique used to improve the performance of machine learning models by combining multiple weak learners to create a strong learner. This project utilizes simple classifiers like Decision Trees and Naive Bayes as weak learners.
 
